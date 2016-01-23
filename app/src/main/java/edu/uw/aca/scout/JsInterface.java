@@ -26,12 +26,9 @@ public class JsInterface {
     /**
      * The '@JavascriptInterface is required to make the method accessible from the Javascript
      * layer
-     *
-     * The code in this method is based on the documentation here:
-     *
      * http://developer.android.com/training/notify-user/build-notification.html
      *
-     * @param message The message displayed in the notification
+     * @param url The filter url to load
      */
     @JavascriptInterface
     public void showFilterResults(String url) {
@@ -40,7 +37,7 @@ public class JsInterface {
         mWebView.post(new Runnable() {
             @Override
             public void run() {
-                mWebView.loadUrl(mContext.getString(R.string.base_url) + "/" + filterUrl);
+                mWebView.loadUrl(mContext.getString(R.string.base_url) + "/" + filterUrl + "&hybrid=true");
             }
         });
 
