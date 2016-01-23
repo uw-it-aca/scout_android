@@ -1,0 +1,6 @@
+<resources>
+    <string name="base_url">http://mustard.aca.uw.edu:8001</string>
+    <string name="home_url">http://mustard.aca.uw.edu:8001/?hybrid=true</string>
+    <string name="filter_url">http://mustard.aca.uw.edu:8001/filter/?hybrid=true</string>
+    <string name="discover_url">http://mustard.aca.uw.edu:8001/discover/?hybrid=true</string>
+</resources>
